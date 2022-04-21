@@ -4,7 +4,7 @@ import React, { useState, useRef } from "react";
 import "./contact.css";
 
 // Email Js
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 
 // image
 import shakeImage from "../../images/shake.svg";

@@ -5,8 +5,8 @@ import Nav from "components/Nav/Nav";
 import Home from "components/Home/Home";
 import Portfolio from "components/Portfolio/Portfolio";
 import Contact from "components/Contact/Contact";
-import Services from "components/Services/Services";
-import Testimonials from "components/Testimonials/Testimonials";
+// import Services from "components/Services/Services";
+// import Testimonials from "components/Testimonials/Testimonials";
 
 // Sanity
 import sanityClient from "client";
@@ -16,8 +16,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 // Components
-import { Menu } from "components/Menu/Menu";
-import Footer from "components/Footer/Footer";
+import { Menu } from "./components/Menu/Menu";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
