@@ -21,7 +21,7 @@
 }
 
 .content h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -85,13 +85,46 @@
   }
 
   .content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .content p {
     padding: 0;
     width: 30rem;
   }
+}
+.social-icons {
+  list-style: none;
+  display: flex;
+  align-items: "center";
+  width: "200px";
+  padding-top: 10vh;
+  padding-left: -10px;
+}
+
+.social-icons > li >span {
+  margin-left: 6px;
+  font-size: 1.3rem;
+}
+.social-icons > li {
+  margin: 15px;
+  font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+  /* box-shadow: 0px 2px 8px -4px #000; */
+  padding: 5px
+}
+
+.social-icons > li:hover {
+  margin: 15px;
+  font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0px 3px 6px 0px #000;
+  transform: z;
+  padding: 5px;
+  cursor:pointer;
+  transform: scale(1.2);
 }
 
 /* Extra Large */

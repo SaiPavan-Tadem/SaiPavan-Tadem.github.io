@@ -3,17 +3,21 @@ import React from "react";
 // Animation
 import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
-
+import {useMediaQuery} from 'react-responsive'
 // Styles
 import "./nav.css";
 
 // Components
 import MenuIcon from "components/Menu/MenuIcon/MenuIcon";
+import { NavLink } from "./NavLink/NavLink";
 
 const Nav = ({ menuOpen, setMenuOpen }) => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 900px)' })
+
   const handleClick = () => {
     setMenuOpen(!menuOpen);
   };
+  console.log(isTabletOrMobile)
 
   return (
     <div className={"nav-wrapper " + (menuOpen && "menuActive")}>
@@ -36,8 +40,20 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
         >
           Sai Pavan Tadem
         </span>
+        {
+          isTabletOrMobile ?
+          <MenuIcon handleClick={handleClick} menuOpen={menuOpen} />
+          :
+          <ul className="menu-list">
+            <NavLink text="Home" path="home" />
+            <NavLink text="About" path="about" />
+            <NavLink text="Projects" path="projects" />
+            <li>Download CV</li>
+            <NavLink text="Contact me" path="contact" />
+          </ul>
 
-        <MenuIcon handleClick={handleClick} menuOpen={menuOpen} />
+        }
+
       </motion.div>
     </div>
   );

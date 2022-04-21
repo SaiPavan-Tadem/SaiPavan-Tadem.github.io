@@ -18,6 +18,7 @@ import "aos/dist/aos.css";
 // Components
 import { Menu } from "./components/Menu/Menu";
 import Footer from "./components/Footer/Footer";
+import AboutMe from "components/AboutMe/AboutMe";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,6 +93,7 @@ function App() {
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
+      <AboutMe/>
       {/* <Services services={services} /> */}
       <Portfolio projects={projects} />
       {/* <Testimonials testimonials={testimonials} /> */}

@@ -1,15 +1,16 @@
 import React from "react";
 
 // SVG
-import man from "images/dev.svg";
+// import man from "images/dev.svg";
+import man from 'images/pavanbw.jpg'
 
 // Animation
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-
 // CSS
 import "./home.css";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 const contentVariants = {
   initial: {
     translateX: "-100vw",
@@ -29,15 +30,9 @@ const contentVariants = {
 const Home = () => {
   return (
     <section className="home-container" id="home" name="home">
-      <motion.div
-        className="content"
-        variants={contentVariants}
-        initial="initial"
-        animate="animate"
-      >
-        <h1>I’m Sai</h1>
-        <p>Graduate student with dedicated research interests in Deep Learning and
-Computer Vision. </p>
+      <motion.div className="content" variants={contentVariants} initial="initial" animate="animate">
+        <h1>I’m Sai Pavan</h1>
+        <p>Graduate student with dedicated research interests in Deep Learning and Computer Vision. </p>
         <Link
           className="home-btn"
           to={"portfolio"}
@@ -50,6 +45,26 @@ Computer Vision. </p>
         >
           See My Work
         </Link>
+        <ul className="social-icons">
+          <li onClick={() => window.open("https://github.com/SaiPavan-Tadem")}>
+            <FaGithub />
+            <span>Github</span>
+          </li>
+          <li onClick={() => window.open("https://www.linkedin.com/in/sai-pavan-tadem-4987a1160/")}>
+            <FaLinkedin />
+            <span>LinkedIn</span>
+          </li>
+          <li onClick={() => window.open("mailto:saipavanthadem@gmail.com")}>
+            <GrMail />
+            <span>Mail</span>
+          </li>
+          {/* <li>
+          
+              <span>g</span>
+              <span>Github</span>
+           
+          </li> */}
+        </ul>
       </motion.div>
 
       <motion.div
