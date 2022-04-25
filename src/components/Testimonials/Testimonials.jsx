@@ -23,7 +23,6 @@ const Portfolio = ({ testimonials }) => {
 
   const prevSlide = (index) => {
     if (index - 1 === 0) {
-      console.log("set to ", testimonials.length);
       setActiveTestimonial(testimonials.length);
     } else {
       setActiveTestimonial(index - 1);

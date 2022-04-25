@@ -117,18 +117,31 @@
 
 .social-icons > li:hover {
   margin: 15px;
-  font-size: 30px;
+  /* font-size: 30px; */
   display: inline-flex;
   align-items: center;
-  box-shadow: 0px 3px 6px 0px #000;
-  transform: z;
+  box-shadow: 0px 1px 5px -3px #000;
   padding: 5px;
   cursor:pointer;
   transform: scale(1.2);
+  transition: all 0.3s;
 }
 
 /* Extra Large */
-@media screen and (min-width: 1025) {
+@media only screen and (max-width: 900px) {
+  .social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+  .social-icons > li {
+    font-size: 23px;
+  }
+  .social-icons > h1 {
+    font-size: 1rem;
+  }
 }
 
 /* XXL */

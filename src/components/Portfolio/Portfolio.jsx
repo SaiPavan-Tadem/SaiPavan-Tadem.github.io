@@ -89,7 +89,6 @@ const Portfolio = ({ projects }) => {
   
   const [projectList, setProjectList] = useState([]);
 
-  console.log(projectList,'list')
   useEffect(() => {
     let tempList = [];
     projects.map(({ category }) => {
@@ -111,7 +110,6 @@ const Portfolio = ({ projects }) => {
       return null;
     });
   }, [selected, projectList, projects]);
-  console.log(data)
   return (
     <section
       data-aos="fade-left"
@@ -140,9 +138,9 @@ const Portfolio = ({ projects }) => {
               <div className="overlay">
                 <div className="left">
                   <h3 style={{paddingBottom: "5px"}}>{item.title}</h3>
-                  {item.tagline &&<><hr/><p>{item.tagline}</p></> }
+                  {item.tagline &&<><hr style={{margin: "10px"}}/><p>{item.tagline}</p></> }
                   <hr/>
-                 <p> By  <b>{item.by}</b></p>
+                 <p> <b>Course:</b> {item.subject} - <b>Dr.{item.by}</b></p>
                 </div>
                 <div className="right">
                   {item.repositoryUrl !== "private" ? (
@@ -167,7 +165,7 @@ const Portfolio = ({ projects }) => {
                     </a>
                   )}
 
-                  <a
+                  {/* <a
                     href={item.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -178,7 +176,7 @@ const Portfolio = ({ projects }) => {
                       className="icon"
                       title="Live view"
                     />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

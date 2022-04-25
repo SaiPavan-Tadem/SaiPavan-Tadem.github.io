@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import "./home.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import { useMediaQuery } from "react-responsive";
 const contentVariants = {
   initial: {
     translateX: "-100vw",
@@ -28,11 +29,12 @@ const contentVariants = {
 };
 
 const Home = () => {
+  // const isTabletOrMobile = useMediaQuery({ query: "(max-width: 900px)" });
   return (
     <section className="home-container" id="home" name="home">
       <motion.div className="content" variants={contentVariants} initial="initial" animate="animate">
         <h1>I’m Sai Pavan</h1>
-        <p>Graduate student with dedicated research interests in Deep Learning and Computer Vision. </p>
+        <p>Graduate student with dedicated research interests in deep learning(DL) and computer vision(CV) </p>
         <Link
           className="home-btn"
           to={"portfolio"}
@@ -45,7 +47,7 @@ const Home = () => {
         >
           See My Work
         </Link>
-        <ul className="social-icons">
+        <ul className= "social-icons">
           <li onClick={() => window.open("https://github.com/SaiPavan-Tadem")}>
             <FaGithub />
             <span>Github</span>
@@ -56,7 +58,7 @@ const Home = () => {
           </li>
           <li onClick={() => window.open("mailto:saipavanthadem@gmail.com")}>
             <GrMail />
-            <span>Mail</span>
+            <span>E-Mail</span>
           </li>
           {/* <li>
           

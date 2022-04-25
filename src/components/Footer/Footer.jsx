@@ -3,7 +3,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-         <hr/>
+         {/* <hr/> */}
          <div className="footer__icons" style={{width: "100%", padding: "10px"}}>
             <ul>
 

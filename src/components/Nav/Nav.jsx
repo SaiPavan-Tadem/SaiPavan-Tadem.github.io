@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 
 // Animation
 import { motion } from "framer-motion";
@@ -6,18 +6,16 @@ import { animateScroll as scroll } from "react-scroll";
 import {useMediaQuery} from 'react-responsive'
 // Styles
 import "./nav.css";
+import CV from '../../docs/cv.pdf'
 
 // Components
 import MenuIcon from "components/Menu/MenuIcon/MenuIcon";
 import { NavLink } from "./NavLink/NavLink";
-
 const Nav = ({ menuOpen, setMenuOpen }) => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 900px)' })
-
   const handleClick = () => {
     setMenuOpen(!menuOpen);
   };
-  console.log(isTabletOrMobile)
 
   return (
     <div className={"nav-wrapper " + (menuOpen && "menuActive")}>
@@ -48,7 +46,7 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
             <NavLink text="Home" path="home" />
             <NavLink text="About" path="about" />
             <NavLink text="Projects" path="projects" />
-            <li>Download CV</li>
+            <li onClick={() => window.open(CV,"_blank")}>Download CV</li>
             <NavLink text="Contact me" path="contact" />
           </ul>
 
