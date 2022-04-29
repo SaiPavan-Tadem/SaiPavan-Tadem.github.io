@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // SVG
 // import man from "images/dev.svg";
-import man from 'images/pavanbw.jpg'
+import man from 'images/pavan.jpg'
 
 // Animation
 import { Link } from "react-scroll";
