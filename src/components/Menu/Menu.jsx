@@ -2,7 +2,7 @@ import React from "react";
 import "./menu.css";
 // Router
 import { NavLink } from "components/Nav/NavLink/NavLink";
-import CV from '../../docs/saipavan.pdf'
+import CV from '../../docs/MyCV.pdf'
 export const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={"menu " + (menuOpen && "active")}>

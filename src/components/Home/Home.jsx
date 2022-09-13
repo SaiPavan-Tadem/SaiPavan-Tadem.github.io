@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 // SVG
 // import man from "images/dev.svg";
-import man from 'images/pavanlatest.jpeg'
+import man from 'images/one.jpg'
 
 // Animation
 import { Link } from "react-scroll";
