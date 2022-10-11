@@ -6,7 +6,7 @@ import { animateScroll as scroll } from "react-scroll";
 import {useMediaQuery} from 'react-responsive'
 // Styles
 import "./nav.css";
-import CV from '../../docs/saipavan.pdf'
+import CV from '../../docs/MyCV.pdf'
 
 // Components
 import MenuIcon from "components/Menu/MenuIcon/MenuIcon";
