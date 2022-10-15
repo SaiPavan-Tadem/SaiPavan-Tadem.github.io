@@ -36,7 +36,7 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
           className={"logo " + (menuOpen && "menuActive")}
           onClick={() => scroll.scrollToTop()}
         >
-          Sai Pavan Tadem
+          
         </span>
         {
           isTabletOrMobile ?

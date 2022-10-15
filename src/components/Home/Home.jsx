@@ -34,7 +34,7 @@ const Home = () => {
     <section className="home-container" id="home" name="home">
       <motion.div className="content" variants={contentVariants} initial="initial" animate="animate">
         <h1>I’m Sai Pavan</h1>
-        <p> 𝕊𝕥𝕒𝕥𝕚𝕤𝕥𝕚𝕔𝕤 ,𝔻𝕖𝕖𝕡 𝕃𝕖𝕒𝕣𝕟𝕚𝕟𝕘 ,ℂ𝕠𝕞𝕡𝕦𝕥𝕖𝕣 𝕍𝕚𝕤𝕚𝕠𝕟 </p>
+        <p> 𝚂𝚝𝚊𝚝𝚒𝚜𝚝𝚒𝚌𝚜, 𝙳𝚎𝚎𝚙 𝙻𝚎𝚊𝚛𝚗𝚒𝚗𝚐, 𝙲𝚘𝚖𝚙𝚞𝚝𝚎𝚛 𝚅𝚒𝚜𝚒𝚘𝚗, 𝙷𝚎𝚊𝚕𝚝𝚑𝚌𝚊𝚛𝚎</p>
         <Link
           className="home-btn"
           to={"portfolio"}
